@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>Tugas Pertemuan 3</h1>      
+    <p>Pertemuan ke-3 mata kuliah Pemrograman Web [C] memberikan tugas yaitu bikin Bootstrap.</p>
+  </div>
+</div>
+
+<div class="container">
+  <p>Hari ini, Senin, 12 Oktober 2020, tepatnya sudah minggu ke 3 perkuliahan terlaksana. Di awal minggu tentunya harus semangat supaya satu minggu ke depan tetap semangat. Walaupun tugas tetap ada setiap mata kuliah, kita tidak boleh malas dalam mengerjakannya karena dengan mengerjakan tugas setidaknya membuat kita mengerti tentang materi yang diberikan dari dosen. Ayoo tetap semangat masih ada 13 minggu lagi perkuliahannya untuk menuju libur! Jangan menyerah! Keep it up guys.</p>      
+  <p>Hari ini, di kelas PWEB [C], saya baru menyadari ternyata dari 27 orang mahasiswa (2018 dan 2019) ternyata hanya ada 6 orang perempuan di kelas kami. Akan tetapi, hal ini tidak menjadi masalah untuk saya. Di bawah nanti saya ingin memberitahu data diri dari perwakilan mahasiswa di kelas PWEB [C] tetapi hanya beberapa orang saja ya karena saya tidak hafal yang lainnya, hehe.</p>      
+</div>
+    
+<div class="container">
+  <h2>Tabel Data Diri</h2>
+  <p>Berikut adalah data diri perwakilan dari kelas PWEB [C] 2020:</p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>NRP</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Asal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>05211940000133</td>
+        <td>Ananda</td>
+        <td>Rahmah Fauziyah</td>
+        <td>Cilegon</td>
+      </tr>
+      <tr>
+        <td>05211940000005</td>
+        <td>Fadilla</td>
+        <td>Rahmayanti</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td>05211940000151</td>
+        <td>Putri</td>
+        <td>Rahma Fadhila</td>
+        <td>Gresik</td>
+      </tr>
+      <tr>
+        <td>05211940000131</td>
+        <td>Vania</td>
+        <td>Farah Chandrawati</td>
+        <td>Surabaya</td>
+      </tr>
+      <tr>
+        <td>05211940000037</td>
+        <td>Ramadhani</td>
+        <td>Galuh Candra Purtiwi</td>
+        <td>Ponorogo</td>
+      </tr>
+      <tr>
+        <td>05211940000028</td>
+        <td>Lacsita</td>
+        <td>Devi Oktaviana</td>
+        <td>Trenggalek</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container">
+    <h2>Tombol pilihan kejutan yang ingin kamu baca</h2>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <p>Yah ternyata pas dipencet tombol nya ngga otomatis</p>     
+</div>  
+
+<div class="container">
+  <h2>Kejutan!</h2>
+  <p>Di bawah ini ada sesuatu untuk kamu:</p>
+  <div class="alert alert-success">
+    <strong>Success!</strong> Selamat! Kamu telah melewati 2 minggu perkuliahan secara daring ini.
+  </div>
+  <div class="alert alert-info">
+    <strong>Info!</strong> Jangan lupa kerjain tugas dan belajar mandiri juga ya!
+  </div>
+  <div class="alert alert-warning">
+    <strong>Warning!</strong> Jangan sampai lupa bangun ya kalau ambil kelas pagi, nanti dipresensi malah alpa.
+  </div>
+  <div class="alert alert-danger">
+    <strong>Danger!</strong> Jangan melakukan kecurangan dalam mengerjakan tugas seperti menjiplak hasil temannya ya! Nanti nilai mu D loh!
+  </div>
+  <div class="alert alert-primary">
+    <strong>Primary!</strong> Jangan lupa makan, jaga kesehatan, dan juga ibadah ya karena itu yang utama.
+  </div>
+  <div class="alert alert-secondary">
+    <strong>Secondary!</strong> Jangan lupa refreshing setelah mengerjakan tugas, kelas, ataupun belajar ya!
+  </div>
+  <div class="alert alert-dark">
+    <strong>Dark!</strong> Hey, jangan begadang terus, kasihan badanmu nanti cepet capek.
+  </div>
+  <div class="alert alert-light">
+    <strong>Light!</strong> Jangan lupa tersenyum ya!
+  </div>
+</div>
+
+<div class="container">
+    <h2>Coba buka yuk</h2>
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      Silahkan pencet
+    </button>
+  
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Hallo, apa kabar?</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            Semangat terus ya kuliah nya. Kita pasti bisa melewati semester ini. Yuk bisa yuk semangat. Jangan lupa bahagia dan tetap tersenyum ya. Jangan lupa tetap menjaga hubungan dengan keluarga dan teman-teman lainnya. Jangan lupa buat eksplorasi diri seendiri, temui bakatmu, temui passionmu, temui minatmu. SEMANGAT!
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Silahkan tutup</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+</div>
+  
+
+</body>
+</html>
