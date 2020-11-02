@@ -1,0 +1,80 @@
+<html>
+
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+
+</head>
+
+<body>
+    <style>
+        style.css .label {
+            float: left;
+            width: 120px;
+        }
+
+        .error {
+            color: red;
+            padding-left: 10px;
+        }
+
+        .submit {
+            margin - left: 125px;
+            margin-top: 10px;
+        }
+
+        div {
+            padding: 5px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () { //Metode ready () menentukan apa yang terjadi ketika kejadian siap terjadi.
+            $('.error').hide(); // menyembunyikan label error
+            $('.userid').blur(function () { // memicu peristiwa blur pada userid/ id pengguna, atau melampirkan fungsi untuk dijalankan ketika peristiwa blur pada userid/id pengguna terjadi.
+                data = $('.userid').val(); // mengembalikan nilai atribut userid/id pengguna nilai dari elemen yang cocok PERTAMA.
+                var len = data.length;
+                if (len < 1) {
+                    $('.userid').next().show(); //mengembalikan elemen userid/id pengguna dan menunjukkan elemen userid/id pengguna dan tersembunyi.
+                    $('.password').attr('disabled', true); // menyetel nilai atribut, metode ini menyetel satu atau lebih pasangan atribut / nilai untuk kumpulan elemen yang cocok.
+                    $('.confpass').attr('disabled', true); // menyetel nilai atribut, metode ini menyetel satu atau lebih pasangan atribut / nilai untuk kumpulan elemen yang cocok.
+                }
+                else {
+                    $('.userid').next().hide(); //mengembalikan elemen userid/id pengguna dan menyembunyikan elemen userid/id pengguna.
+                    $('.password').removeAttr('disabled'); // menghapus satu atau lebih atribut dari elemen password.
+                    $('.confpass').removeAttr('disabled'); // menghapus satu atau lebih atribut dari elemen confpass.
+                }
+            });
+            $('.password').blur(function () { // memicu peristiwa blur pada password, atau melampirkan fungsi untuk dijalankan ketika peristiwa blur pada password terjadi.
+                data = $('.password').val(); //mengembalikan nilai atribut nilai dari elemen password/kata sandi yang cocok PERTAMA.
+                var len = data.length;
+                if (len < 1) {
+                    $('.password').next().show(); //mengembalikan elemen password dan menunjukkan elemen password dan tersembunyi.
+                    $('.confpass').attr('disabled', true); // menyetel nilai atribut, metode ini menyetel satu atau lebih pasangan atribut / nilai untuk kumpulan elemen yang cocok.
+                }
+                else {
+                    $('.password').next().hide(); //mengembalikan elemen password dan menyembunyikan elemen password.
+                    $('.confpass').removeAttr('disabled'); // menghapus satu atau lebih atribut dari elemen confpass.
+                }
+            });
+            $('.confpass').blur(function () { // memicu peristiwa blur pada confpass, atau melampirkan fungsi untuk dijalankan ketika peristiwa blur pada confpass terjadi.
+                if ($('.password').val() != $('.confpass').val()) { //mengembalikan nilai atribut nilai dari elemen confpass yang cocok PERTAMA.
+                    $('.confpass').next().show(); //mengembalikan elemen confpass dan menunjukkan elemen confpass dan tersembunyi.
+                }
+                else {
+                    $('.confpass').next().hide(); //mengembalikan elemen confpass dan menyembunyikan elemen confpass.
+                }
+            });
+        });
+    </script>
+    <form>
+        <div><span class="label">Id Pengguna </span><input type="text" class="userid" name="userid" /><span
+                class="error">
+                Id Pengguna tidak bisa kosong</span></div>
+        <div><span class="label">Kata Sandi </span><input type="password" class="password" name="password" /><span
+                class="error"> Kata sandi tidak bisa kosong</span></div>
+        <div><span class="label">Konfirmasi Kata Sandi </span><input type="password" class="confpass"
+                name="confpass" /><span class="error"> Kata Sandi dan Konfirmasi Kata Sandi tidak sama</span></div>
+    </form>
+</body>
+
+</html>
